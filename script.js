@@ -9,13 +9,9 @@ let inptsDisplay = document.getElementById('inputs-display');
 let completeDisplay = document.getElementById('complete-display');
 
 
-let cardinfo;
+let cardinfo = [];
 
-if(localStorage.cardinformations != null){
-   cardinfo = localStorage.setItem(JSON.stringify(cardinfo));
-}else{
-    cardinfo = [];
-};
+
 
 
 function Confirm(){
