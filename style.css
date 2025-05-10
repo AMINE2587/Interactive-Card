@@ -1,0 +1,205 @@
+*{
+    margin: 0;
+    padding: 0;
+    color: black;
+}
+body{
+    display: flex;
+    height: 100vh;
+    background: white;
+    font-family: 'Poppins', sans-serif;
+}
+.carts-back{
+    width: 40%;
+    background: url(bg-main-desktop.png);
+    background-size: cover;
+}
+.container-inputs{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.form-container{
+    display: flex;
+    justify-content: center;
+    width: 550Px;
+    height: 70vh;
+    margin-left: 150px;
+    margin-top: 100px;
+}
+.inputs{
+    width: 100%;
+}
+.inputs .card-name{
+    display: flex;
+    justify-content: left;
+    align-items: start;
+    flex-direction: column;
+    padding: 10px;
+}
+.inputs .card-name input{
+    margin-top: 5px;
+    width: 80%;
+     border-radius: 7px;
+    padding: 12px;
+    background: none;
+    transition: border 0.3s ease-in-out;
+    border: rgb(129, 128, 128) solid 1.5px;
+
+}
+
+.inputs .card-name label{
+    font-size: 13px;
+}
+.inputs .card-name input:focus{
+    outline: none;
+    border: solid 1.5px rgb(35, 35, 35);
+}
+
+.card-numbers{
+    display: flex;
+    justify-content: left;
+    align-items: start;
+    flex-direction: column;
+    padding: 10px;
+}
+.card-numbers input{
+    margin-top: 5px;
+    border-radius: 7px;
+    width: 80%;
+    padding: 12px;
+    background: none;
+    transition: border 0.3s ease-in-out;
+    border: rgb(144, 144, 144) solid 1.5px;
+}
+.card-numbers input:focus{
+    outline: none;
+    border: solid 1.5px rgb(36, 36, 36);
+}
+
+.card-numbers label{
+    font-size: 13px;
+}
+.others-info{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 10px;
+    height: 13vh;
+}
+.others-info input{
+    padding: 9px;
+    margin-top: 5px;
+    border-radius: 7px;
+    padding: 12px;
+    background: none;
+    transition: border 0.3s ease-in-out;
+    border: rgb(143, 142, 142) solid 1.5px;
+}
+.others-info .small-inp{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 10px;
+    width: 40%;
+    padding: 10px;
+}
+.others-info .small-inp input{
+    width: 30%;
+}
+.others-info .small-inp input:focus{
+    outline: none;
+    border: solid 1.5px rgb(58, 57, 57);
+}
+
+.cvc-contain{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px;
+}
+.cvc-contain input{
+    width: 100%;
+}
+.cvc-contain input:focus{
+    outline: none;
+    border: solid 1.5px rgb(58, 58, 58);
+}
+.confirm-btn{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    height: 8vh;
+    padding: 10px;
+}
+.confirm-btn button{
+    background: black;
+    color: white;
+    width: 85%;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    transition: transform 0.4s ease-in-out;
+}
+.confirm-btn button:hover{
+    transform: scale(1.03);
+}
+
+canvas{
+    position: absolute;
+    transform: translate(30%, 40%);
+    background: url(bg-card-front.png);
+    background-size: cover;
+    border-radius: 8px;
+    box-shadow: rgba(180, 180, 180, 0.259) 1px 1px 30px 1px;
+    width: 350px;
+    height: 190px;
+    cursor: pointer;
+}
+
+.back-card{
+    padding: 10px;
+}
+.back-card img{
+    cursor: pointer;
+    position: absolute;
+    transform: translate(60%, 155%);
+    border-radius: 15px;
+    box-shadow: rgba(180, 180, 180, 0.657) 2px 2px 30px 2px;
+}
+.complete{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 540px;
+    padding: 10px;
+}
+.complete h2{
+    margin-top: 15px;
+}
+.complete p{
+    margin-top: 10x;
+    font-size: 14px;
+    color: rgb(145, 145, 145);
+}
+.complete button{
+    background: black;
+    color: white;
+    width: 60%;
+    padding: 10px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    transition: transform 0.4s ease-in-out;
+}
+.complete button:hover{
+    transform: scale(1.03);
+}

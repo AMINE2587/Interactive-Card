@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Card</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+    <div class="carts-back">
+        <canvas id="canvas" width="1920" height="1080"></canvas> 
+        <div class="back-card">
+          <img width="330" height="189" src="bg-card-back.png" alt="">
+        </div>
+    </div>
+      
+<div class="container-inputs">
+    <div  class="form-container">
+    <div id="inputs-display"  class="inputs">
+      <div class="card-name">
+        <label for="holder-name">CardHolder Name</label>
+        <input maxlength="20" placeholder="Name On Card" id="holder-name" type="text">
+      </div>
+      <div class="card-numbers">
+        <label for="card-number">Card Number</label>
+        <input maxlength="26" placeholder="Card Number" id="card-number" type="text">
+      </div>
+      <div class="others-info">
+        <div class="small-inp">
+        <input maxlength="2" id="m" placeholder="MM" type="text">
+        <input maxlength="2" id="y" placeholder="YY" type="text">
+        </div>
+        <div class="cvc-contain">
+        <input maxlength="3" id="cvc" placeholder="CVC" type="text">
+        </div>
+      </div>
+      <div class="confirm-btn">
+        <button onclick="Confirm()" id="confirm-btn">Confirm</button>
+      </div>
+    </div>
+    <div id="complete-display" style="display: none;" class="complete">
+     <img width="80px" src="icon-complete.svg" alt="">
+     <h2>Thank You</h2>
+     <p>We've added your card details</p>
+     <button>Continue</button>
+</div>
+    </div>
+</div>
+
+
+
+    
+
+
+
+    <script src="script.js"></script>
+    <script src="drawing.js"></script>
+</body>
+</html>
